@@ -1,0 +1,353 @@
+header {
+  background-color: #35cabb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 35px;
+}
+
+header #brand {
+  width: 200px;
+  line-height: 80px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+header #fecha-hoy {
+  color: white;
+  margin: 0px 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-top: 18px;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px white solid;
+  color: white !important;
+}
+
+header nav ul li a .btn-secondary {
+  background-color: white;
+  color: #e6621f;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+}
+
+.table tbody tr {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Nunito', sans-serif;
+  color: #6b6666;
+}
+
+.table tbody tr th {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.table tbody tr th .fas {
+  margin: 0px 6px;
+  font-size: 15px;
+}
+
+.table tbody tr .status {
+  width: 180px;
+}
+
+.table tbody tr .status select {
+  width: auto;
+  height: 25px;
+  border-radius: 20px;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.table tbody tr .time {
+  width: 110px;
+}
+
+.table tbody tr .number {
+  width: 80px;
+}
+
+.table tbody tr .description {
+  width: 400px;
+}
+
+.table tbody tr .user {
+  width: 300px;
+}
+
+.table tbody tr .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 70px;
+}
+
+.table tbody tr .address .fas {
+  margin: 0px 6px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.table tbody tr .price {
+  width: 150px;
+}
+
+.table tbody tr .price .far {
+  margin: 0px 5px;
+  font-size: 15px;
+}
+
+#modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 25%;
+  height: 100%;
+  z-index: 100;
+  background-color: white;
+  -webkit-box-shadow: -5px 0px 25px rgba(56, 56, 56, 0.4);
+          box-shadow: -5px 0px 25px rgba(56, 56, 56, 0.4);
+  overflow: hidden scroll;
+}
+
+#modal #modal-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 15px;
+  background-color: #35cabb;
+  height: 50px;
+  z-index: 300;
+}
+
+#modal #modal-header p {
+  margin-top: 5px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+}
+
+#modal #modal-header i {
+  margin-top: 12px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+#modal #product-title {
+  padding: 10px;
+}
+
+#modal #product-title .secondary-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: gray;
+}
+
+#modal #product-title .secondary-title small {
+  color: black;
+  font-weight: 600;
+}
+
+#modal #product-list {
+  padding: 0px 3%;
+}
+
+#modal #product-list .card {
+  margin-bottom: 10px;
+  border: none;
+}
+
+#modal #product-list .card .row {
+  height: 50px;
+}
+
+#modal #product-list .card .row .col-md-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+}
+
+#modal #product-list .card .row .col-md-4 img {
+  width: 60px;
+  height: 100%;
+  margin-right: 5px;
+}
+
+#modal #product-list .card .row .col-md-4 div h6 {
+  font-size: 18px;
+  margin: 0px;
+  width: 200px;
+}
+
+#modal #product-list .card .row .col-md-4 div p {
+  margin: 0;
+  font-size: 12px;
+}
+
+#modal #product-list .card .row .col-md-4 .add-icon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+#modal #product-list .card .row .col-md-4 .add-icon i {
+  font-size: 30px;
+  color: #e6621f;
+}
+
+#modal .status-pops {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+#modal .status-pops .badge {
+  text-align: left;
+  width: 120px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-left: 12px;
+  margin: 5px 20px;
+}
+
+#modal .status-pops .bg-red {
+  background-color: red;
+  opacity: 0.2;
+}
+
+#modal .status-pops .bg-orange {
+  background-color: orange;
+  opacity: 0.2;
+}
+
+#modal .status-pops .bg-yellow {
+  background-color: gold;
+  opacity: 0.2;
+}
+
+#modal .status-pops .bg-green {
+  background-color: green;
+  opacity: 1;
+}
+
+#modal .status-pops .bg-gray {
+  background-color: gray;
+  opacity: 0.2;
+}
+
+#modal table tbody tr .nombreCompleto {
+  font-weight: 800;
+  width: 40%;
+}
+
+#modal .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#modal .btns a {
+  margin: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  color: #e6621f;
+}
+
+#modal .btns a .btn-secondary {
+  background-color: #e6621f;
+  color: white;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  width: 200px;
+}
+/*# sourceMappingURL=admin.css.map */

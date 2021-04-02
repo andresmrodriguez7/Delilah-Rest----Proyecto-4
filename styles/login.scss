@@ -1,0 +1,183 @@
+                            * {
+                                margin: 0px;
+                                padding: 0px;
+                            }
+                            
+                            header {
+                                background-color: turquoise;
+                                #brand {
+                                    text-align: center;
+                                    line-height: 80px;
+                                    font-family: 'Nunito', sans-serif;
+                                    font-size: 22px;
+                                    font-weight: 800;
+                                    color: white;
+                                }
+                            }
+                            
+                            .login {
+                                padding: 7%;
+                                height: 300px;
+                                display: flex;
+                                flex-flow: column nowrap;
+                                justify-content: flex-start;
+                                .container-login {
+                                    font-family: 'Roboto', sans-serif;
+                                    font-size: 12px;
+                                    color: gray;
+                                    margin-top: 20px;
+                                    p .login-input {
+                                        width: 100%;
+                                        outline: none;
+                                        border: 1px solid rgba(128, 128, 128, 0.4);
+                                        border-radius: 5px;
+                                        line-height: 35px;
+                                        padding-left: 5px;
+                                    }
+                                }
+                                .loginBtn {
+                                    text-align: center;
+                                    margin-top: 40px;
+                                    button {
+                                        background-color: #e6621f;
+                                        border-style: none;
+                                        border-radius: 30px;
+                                        width: 80%;
+                                        outline: none;
+                                        text-transform: uppercase;
+                                        font-family: 'Nunito', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        color: white;
+                                        line-height: 45px;
+                                    }
+                                    #registerLink {
+                                        color: #e6621f;
+                                        text-transform: uppercase;
+                                        font-family: 'Nunito', sans-serif;
+                                        font-size: 13px;
+                                        font-weight: 500;
+                                        line-height: 50px;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                            
+                            #mean-login {
+                                display: none;
+                            }
+                            
+                            #mean-register {
+                                display: none;
+                            }
+                            
+                            .landing {
+                                #fav-title {
+                                    padding: 3%;
+                                    .secondary-title {
+                                        font-family: 'Nunito', sans-serif;
+                                        font-weight: 800;
+                                        font-size: 20px;
+                                        color: gray;
+                                    }
+                                }
+                                .carousel {
+                                    padding-left: 3%;
+                                    position: relative;
+                                    margin: 0px;
+                                    display: grid;
+                                    grid-template-columns: 14rem 14rem 14rem 14rem 14rem;
+                                    grid-template-rows: auto;
+                                    column-gap: 10px;
+                                    box-sizing: border-box;
+                                    width: 100%;
+                                    overflow: scroll hidden;
+                                    scroll-behavior: smooth;
+                                    padding-right: 0%;
+                                    .card {
+                                        width: 14rem;
+                                        float: left;
+                                        .product-image {
+                                            display: flex;
+                                            flex-flow: column nowrap;
+                                            justify-content: flex-end;
+                                            height: 150px;
+                                            width: 100%;
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-image: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 1) 100%), url(./images/hamburguesa1.jpg);
+                                            .productname {
+                                                font-family: 'Nunito', sans-serif;
+                                                margin-bottom: 2px;
+                                                font-weight: 800;
+                                                font-size: 16px;
+                                                padding-left: 5px;
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                    .card-body {
+                                        display: flex;
+                                        flex-flow: row nowrap;
+                                        justify-content: space-between;
+                                        .card-subtitle {
+                                            margin: 0px;
+                                        }
+                                        .add {
+                                            color: #e6621f;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                                #product-title {
+                                    padding: 3%;
+                                    .secondary-title {
+                                        font-family: 'Nunito', sans-serif;
+                                        font-weight: 800;
+                                        font-size: 20px;
+                                        color: gray;
+                                    }
+                                }
+                                #product-list {
+                                    padding: 3%;
+                                    .card {
+                                        margin-bottom: 10px;
+                                        border: none;
+                                        .row {
+                                            height: 50px;
+                                            .col-md-4 {
+                                                position: relative;
+                                                display: flex;
+                                                flex-flow: row wrap;
+                                                justify-content: flex-start;
+                                                height: 100%;
+                                                img {
+                                                    width: 60px;
+                                                    height: 100%;
+                                                    margin-right: 5px;
+                                                }
+                                                div {
+                                                    padding: 5px 0px;
+                                                    h6 {
+                                                        font-size: 15px;
+                                                        margin: 0px;
+                                                    }
+                                                    p {
+                                                        margin: 0;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                                .add-icon {
+                                                    position: absolute;
+                                                    right: 10px;
+                                                    top: 8px;
+                                                    i {
+                                                        font-size: 30px;
+                                                        color: #e6621f;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }

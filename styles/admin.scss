@@ -1,0 +1,269 @@
+header {
+    background-color: rgb(53, 202, 187);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0px 35px;
+    #brand {
+        width: 200px;
+        line-height: 80px;
+        font-family: 'Nunito', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        color: white;
+    }
+    #fecha-hoy {
+        color: white;
+        margin: 0px 20px;
+        font-family: 'Nunito', sans-serif;
+    }
+    nav {
+        ul {
+            display: flex;
+            flex-flow: row nowrap;
+            margin-top: 18px;
+            li {
+                list-style: none;
+                margin: 0px 20px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 40px;
+                    &:hover {
+                        border-bottom: 3px white solid;
+                        color: white!important;
+                    }
+                    .btn-secondary {
+                        background-color: white;
+                        color: #e6621f;
+                        border-radius: 20px;
+                        line-height: 40px;
+                        text-align: center;
+                        font-weight: 600;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table {
+    tbody {
+        tr {
+            font-size: 14px;
+            line-height: 24px;
+            font-family: 'Nunito', sans-serif;
+            color: rgb(107, 102, 102);
+            th {
+                text-transform: uppercase;
+                font-size: 12px;
+                .fas {
+                    margin: 0px 6px;
+                    font-size: 15px;
+                }
+            }
+            .status {
+                width: 180px;
+                select {
+                    width: auto;
+                    height: 25px;
+                    border-radius: 20px;
+                    font-size: 10px;
+                    line-height: 10px;
+                }
+            }
+            .time {
+                width: 110px;
+            }
+            .number {
+                width: 80px;
+            }
+            .description {
+                width: 400px;
+            }
+            .user {
+                width: 300px;
+            }
+            .address {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding-right: 70px;
+                .fas {
+                    margin: 0px 6px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+            .price {
+                width: 150px;
+                .far {
+                    margin: 0px 5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+#modal {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 25%;
+    height: 100%;
+    z-index: 100;
+    background-color: white;
+    box-shadow: -5px 0px 25px rgba(56, 56, 56, 0.4);
+    overflow: hidden scroll;
+    #modal-header {
+        position: sticky;
+        top: 0px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0px 15px;
+        background-color: rgb(53, 202, 187);
+        height: 50px;
+        z-index: 300;
+        p {
+            margin-top: 5px;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 40px;
+        }
+        i {
+            margin-top: 12px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    #product-title {
+        padding: 10px;
+        .secondary-title {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 800;
+            font-size: 15px;
+            color: gray;
+            small {
+                color: black;
+                font-weight: 600;
+            }
+        }
+    }
+    #product-list {
+        padding: 0px 3%;
+        .card {
+            margin-bottom: 10px;
+            border: none;
+            .row {
+                height: 50px;
+                .col-md-4 {
+                    position: relative;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    justify-content: flex-start;
+                    height: 100%;
+                    img {
+                        width: 60px;
+                        height: 100%;
+                        margin-right: 5px;
+                    }
+                    div {
+                        h6 {
+                            font-size: 18px;
+                            margin: 0px;
+                            width: 200px;
+                        }
+                        p {
+                            margin: 0;
+                            font-size: 12px;
+                        }
+                    }
+                    .add-icon {
+                        position: absolute;
+                        right: 10px;
+                        top: 8px;
+                        i {
+                            font-size: 30px;
+                            color: #e6621f;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .status-pops {
+        display: flex;
+        flex-flow: column nowrap;
+        .badge {
+            text-align: left;
+            width: 120px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            padding-left: 12px;
+            margin: 5px 20px;
+        }
+        .bg-red {
+            background-color: red;
+            opacity: 0.2;
+        }
+        .bg-orange {
+            background-color: orange;
+            opacity: 0.2;
+        }
+        .bg-yellow {
+            background-color: gold;
+            opacity: 0.2;
+        }
+        .bg-green {
+            background-color: green;
+            opacity: 1;
+        }
+        .bg-gray {
+            background-color: gray;
+            opacity: 0.2;
+        }
+    }
+    table {
+        tbody {
+            tr {
+                .nombreCompleto {
+                    font-weight: 800;
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .btns {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin-bottom: 20px;
+        a {
+            margin: 10px 0px;
+            text-align: center;
+            text-decoration: none;
+            color: #e6621f;
+            .btn-secondary {
+                background-color: #e6621f;
+                color: white;
+                border-radius: 20px;
+                line-height: 40px;
+                text-align: center;
+                font-weight: 600;
+                width: 200px;
+            }
+        }
+    }
+}
