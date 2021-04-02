@@ -15,6 +15,14 @@
                                 }
                             }
                             
+                            #mean-login {
+                                display: block;
+                            }
+                            
+                            #mean-register {
+                                display: none;
+                            }
+                            
                             .login {
                                 padding: 7%;
                                 height: 300px;
@@ -51,7 +59,7 @@
                                         color: white;
                                         line-height: 45px;
                                     }
-                                    #registerLink {
+                                    .registerLink {
                                         color: #e6621f;
                                         text-transform: uppercase;
                                         font-family: 'Nunito', sans-serif;
@@ -63,15 +71,8 @@
                                 }
                             }
                             
-                            #mean-login {
-                                display: none;
-                            }
-                            
-                            #mean-register {
-                                display: none;
-                            }
-                            
                             .landing {
+                                display: none;
                                 #fav-title {
                                     padding: 3%;
                                     .secondary-title {
@@ -178,6 +179,23 @@
                                                 }
                                             }
                                         }
+                                    }
+                                }
+                                .logOut {
+                                    display: flex;
+                                    justify-content: center;
+                                    button {
+                                        background-color: #e6621f;
+                                        border-style: none;
+                                        border-radius: 5px;
+                                        width: 80%;
+                                        outline: none;
+                                        text-transform: uppercase;
+                                        font-family: 'Nunito', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        color: white;
+                                        line-height: 45px;
                                     }
                                 }
                             }

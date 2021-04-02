@@ -16,6 +16,14 @@ header #brand {
   color: white;
 }
 
+#mean-login {
+  display: block;
+}
+
+#mean-register {
+  display: none;
+}
+
 .login {
   padding: 7%;
   height: 300px;
@@ -66,7 +74,7 @@ header #brand {
   line-height: 45px;
 }
 
-.login .loginBtn #registerLink {
+.login .loginBtn .registerLink {
   color: #e6621f;
   text-transform: uppercase;
   font-family: 'Nunito', sans-serif;
@@ -76,11 +84,7 @@ header #brand {
   text-decoration: none;
 }
 
-#mean-login {
-  display: none;
-}
-
-#mean-register {
+.landing {
   display: none;
 }
 
@@ -238,5 +242,28 @@ header #brand {
 .landing #product-list .card .row .col-md-4 .add-icon i {
   font-size: 30px;
   color: #e6621f;
+}
+
+.landing .logOut {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing .logOut button {
+  background-color: #e6621f;
+  border-style: none;
+  border-radius: 5px;
+  width: 80%;
+  outline: none;
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  line-height: 45px;
 }
 /*# sourceMappingURL=login.css.map */
