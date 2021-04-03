@@ -142,7 +142,7 @@
                                 #product-list {
                                     padding: 3%;
                                     .card {
-                                        margin-bottom: 10px;
+                                        margin-bottom: 20px;
                                         border: none;
                                         .row {
                                             height: 50px;
@@ -177,6 +177,15 @@
                                                         color: #e6621f;
                                                     }
                                                 }
+                                                .fav-icon {
+                                                    position: absolute;
+                                                    right: 50px;
+                                                    top: 8px;
+                                                    i {
+                                                        font-size: 30px;
+                                                        color: #e6621f;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -188,6 +197,7 @@
                                         background-color: #e6621f;
                                         border-style: none;
                                         border-radius: 5px;
+                                        margin-bottom: 20px;
                                         width: 80%;
                                         outline: none;
                                         text-transform: uppercase;

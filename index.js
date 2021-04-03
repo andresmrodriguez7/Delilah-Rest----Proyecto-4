@@ -22,8 +22,8 @@ loginBtn.addEventListener('click', () => {
     paginaLogin.style.display = "none";
 
 });
+
 logOutBtn.addEventListener('click', () => {
     landingPage.style.display = "none";
     paginaLogin.style.display = "block";
-
 });
