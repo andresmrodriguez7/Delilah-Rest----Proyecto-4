@@ -142,10 +142,46 @@ header nav ul li a .btn-secondary {
   font-size: 15px;
 }
 
+#product-creator {
+  padding: 3%;
+  display: none;
+}
+
+#product-creator .form-label {
+  font-family: 'Nunito', sans-serif;
+}
+
+#product-creator .crear {
+  background-color: #e6621f;
+  color: white;
+  border-radius: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 600;
+  width: 250px;
+  cursor: pointer;
+}
+
+@-webkit-keyframes deploy {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes deploy {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 25%;
+  }
+}
+
 #modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -160,6 +196,12 @@ header nav ul li a .btn-secondary {
   -webkit-box-shadow: -5px 0px 25px rgba(56, 56, 56, 0.4);
           box-shadow: -5px 0px 25px rgba(56, 56, 56, 0.4);
   overflow: hidden scroll;
+  -webkit-animation-name: deploy;
+          animation-name: deploy;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
 }
 
 #modal #modal-header {
@@ -334,14 +376,7 @@ header nav ul li a .btn-secondary {
   margin-bottom: 20px;
 }
 
-#modal .btns a {
-  margin: 10px 0px;
-  text-align: center;
-  text-decoration: none;
-  color: #e6621f;
-}
-
-#modal .btns a .btn-secondary {
+#modal .btns .btn-secondary {
   background-color: #e6621f;
   color: white;
   border-radius: 20px;
@@ -349,5 +384,20 @@ header nav ul li a .btn-secondary {
   text-align: center;
   font-weight: 600;
   width: 200px;
+  cursor: pointer;
+}
+
+#modal .btns #liveToastBtn {
+  margin: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  color: #e6621f;
+  cursor: pointer;
+}
+
+.toast {
+  position: absolute;
+  z-index: 1000;
+  margin: 30px;
 }
 /*# sourceMappingURL=admin.css.map */

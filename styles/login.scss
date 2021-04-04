@@ -34,13 +34,20 @@
                                             font-size: 12px;
                                             color: gray;
                                             margin-top: 20px;
-                                            p .login-input {
-                                                width: 100%;
-                                                outline: none;
-                                                border: 1px solid rgba(128, 128, 128, 0.4);
-                                                border-radius: 5px;
-                                                line-height: 35px;
-                                                padding-left: 5px;
+                                            p {
+                                                #emailHelp {
+                                                    margin-top: 0px;
+                                                    padding: 0px;
+                                                    display: none;
+                                                }
+                                                .login-input {
+                                                    width: 100%;
+                                                    outline: none;
+                                                    border: 1px solid rgba(128, 128, 128, 0.4);
+                                                    border-radius: 5px;
+                                                    line-height: 35px;
+                                                    padding-left: 5px;
+                                                }
                                             }
                                         }
                                         .loginBtn {

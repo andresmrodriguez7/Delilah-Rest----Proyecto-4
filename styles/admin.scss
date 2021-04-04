@@ -110,8 +110,35 @@ header {
     }
 }
 
+#product-creator {
+    padding: 3%;
+    display: none;
+    .form-label {
+        font-family: 'Nunito', sans-serif;
+    }
+    .crear {
+        background-color: #e6621f;
+        color: white;
+        border-radius: 20px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: 600;
+        width: 250px;
+        cursor: pointer;
+    }
+}
+
+@keyframes deploy {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 25%;
+    }
+}
+
 #modal {
-    display: flex;
+    display: none;
     flex-flow: column nowrap;
     position: absolute;
     top: 0%;
@@ -122,6 +149,9 @@ header {
     background-color: white;
     box-shadow: -5px 0px 25px rgba(56, 56, 56, 0.4);
     overflow: hidden scroll;
+    animation-name: deploy;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
     #modal-header {
         position: sticky;
         top: 0px;
@@ -250,20 +280,28 @@ header {
         flex-flow: column nowrap;
         align-items: center;
         margin-bottom: 20px;
-        a {
+        .btn-secondary {
+            background-color: #e6621f;
+            color: white;
+            border-radius: 20px;
+            line-height: 40px;
+            text-align: center;
+            font-weight: 600;
+            width: 200px;
+            cursor: pointer;
+        }
+        #liveToastBtn {
             margin: 10px 0px;
             text-align: center;
             text-decoration: none;
             color: #e6621f;
-            .btn-secondary {
-                background-color: #e6621f;
-                color: white;
-                border-radius: 20px;
-                line-height: 40px;
-                text-align: center;
-                font-weight: 600;
-                width: 200px;
-            }
+            cursor: pointer;
         }
     }
+}
+
+.toast {
+    position: absolute;
+    z-index: 1000;
+    margin: 30px;
 }

@@ -20,11 +20,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">PEDIDOS</a> </li>
-                <li><a href="">ADMIN</a> </li>
-                <li><a href="">HISTORIAL</a> </li>
+                <li><a href="">PEDIDOS</a></li>
+                <li><a href="">ADMIN</a></li>
+                <li><a href="">PRODUCTOS</a></li>
                 <li>
-                    <a href="">
+                    <a>
                         <div class="btn-secondary" id="prod-nuevo-btn">
                             CARGAR PRODUCTO
                         </div>
@@ -32,188 +32,214 @@
                 </li>
             </ul>
         </nav>
-
     </header>
     <br>
-    <table class="table table-striped table-hover">
-        <tbody>
-            <tr>
-                <th class="text-muted">
-                    Estado <i class="fas fa-sort-alpha-down"></i>
-                </th>
-                <th class="text-muted">
-                    Hora <i class="fas fa-sort-alpha-down"></i>
-                </th>
-                <th class="text-muted">
-                    Número
-                </th>
-                <th class="text-muted">
-                    Descripción
-                </th>
-                <th class="text-muted">
-                    Pago
-                </th>
-                <th class="text-muted">
-                    Usuario
-                </th>
-                <th class="text-muted">
-                    Dirección
-                </th>
-            </tr>
-            <tr>
-                <td class="status">
-                    <select class="form-select" aria-label="Default select example">
-                    <option  style="text-align: center;" selected>ESTADO</option>
-                    <option value="1">NUEVO</option>
-                    <option value="2">CONFIRMADO</option>
-                    <option value="3">PREPARANDO</option>
-                    <option value="4">ENVIANDO</option>
-                    <option value="5">ENTREGADO</option>
-                  </select>
-                </td>
-                <td class="time">12:30PM</td>
-                <td class="number">#72</td>
-                <td class="description">x1HambQueso x2HambBacon</td>
-                <td class="price"><i class="far fa-credit-card"></i> $66,000</td>
-                <td class="user">Fredy Mercury</td>
-                <td class="address">Cra 54 12-32 <span><i class="fas fa-info-circle"></i></span> </td>
-            </tr>
-            <tr>
-                <td class="status">
-                    <select class="form-select" aria-label="Default select example">
-                    <option  style="text-align: center;" selected>ESTADO</option>
-                    <option value="1">NUEVO</option>
-                    <option value="2">CONFIRMADO</option>
-                    <option value="3">PREPARANDO</option>
-                    <option value="4">ENVIANDO</option>
-                    <option value="5">ENTREGADO</option>
-                  </select>
-                </td>
-                <td class="time">12:30PM</td>
-                <td class="number">#72</td>
-                <td class="description">x1HambQueso x2HambBacon</td>
-                <td class="price"><i class="far fa-credit-card"></i> $66,000</td>
-                <td class="user">Fredy Mercury</td>
-                <td class="address">Cra 54 12-32 <span><i class="fas fa-info-circle"></i></span> </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-
-    <div id="modal">
-        <div id="modal-header">
-            <p>DETALLE DE PEDIDO</p> <i class="fas fa-times"></i>
-        </div>
-        <div id="product-title">
-            <h3 class="secondary-title">Detalle</h3>
-        </div>
-        <div id="product-list">
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/hamburguesa1.jpg" alt="...">
-                        <div>
-                            <h6 class="card-title">Veggie Avocado</h6>
-                            <p class=" text-muted">
-                                <medium class="text-muted">$31,200</medium>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/hamburguesa1.jpg" alt="...">
-                        <div>
-                            <h6 class="card-title">Veggie Avocado</h6>
-                            <p class=" text-muted">
-                                <medium class="text-muted">$31,200</medium>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/hamburguesa1.jpg" alt="...">
-                        <div>
-                            <h6 class="card-title">Veggie Avocado</h6>
-                            <p class=" text-muted">
-                                <medium class="text-muted">$31,200</medium>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/hamburguesa1.jpg" alt="...">
-                        <div>
-                            <h6 class="card-title">Veggie Avocado</h6>
-                            <p class=" text-muted">
-                                <medium class="text-muted">$31,200</medium>
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="product-title">
-            <h3 class="secondary-title">Importe total: <small>$62,400</small></h3>
-        </div>
-        <div id="product-title">
-            <h3 class="secondary-title">Estado</h3>
-        </div>
-        <div class="status-pops">
-            <span class="badge  rounded-pill bg-red">NUEVO</span>
-            <span class="badge rounded-pill bg-orange">CONFIRMADO</span>
-            <span class="badge rounded-pill bg-yellow">PREPARANDO</span>
-            <span class="badge rounded-pill bg-green">ENVIANDO</span>
-            <span class="badge rounded-pill bg-gray">ENTREGADO</span>
-        </div>
-        <div id="product-title">
-            <h3 class="secondary-title">Forma de pago</h3>
-            <p>Efectivo</p>
-        </div>
-        <div id="product-title">
-            <h3 class="secondary-title">Dirección</h3>
-            <small>Cra 56 49-17 Barrio Montecristo Barranquilla, Colombia</small>
-        </div>
-        <div id="product-title">
-            <h3 class="secondary-title">Usuario</h3>
-
-        </div>
-        <table class="table table-hover">
+    <main>
+        <table id="table" class="table table-striped table-hover">
             <tbody>
                 <tr>
-                    <td class="nombreCompleto">Freddy Mercury</td>
-                    <td class="userName">queen_Fredy</td>
+                    <th class="text-muted">
+                        Estado <i class="fas fa-sort-alpha-down"></i>
+                    </th>
+                    <th class="text-muted">
+                        Hora <i class="fas fa-sort-alpha-down"></i>
+                    </th>
+                    <th class="text-muted">
+                        Número
+                    </th>
+                    <th class="text-muted">
+                        Descripción
+                    </th>
+                    <th class="text-muted">
+                        Pago
+                    </th>
+                    <th class="text-muted">
+                        Usuario
+                    </th>
+                    <th class="text-muted">
+                        Dirección
+                    </th>
                 </tr>
                 <tr>
-                    <td class="correo">freddy_queen@nada.com</td>
-                    <td class="telefono">+57 3116317751</td>
+                    <td class="status">
+                        <select class="form-select" aria-label="Default select example">
+                    <option  style="text-align: center;" selected>ESTADO</option>
+                    <option value="1">NUEVO</option>
+                    <option value="2">CONFIRMADO</option>
+                    <option value="3">PREPARANDO</option>
+                    <option value="4">ENVIANDO</option>
+                    <option value="5">ENTREGADO</option>
+                  </select>
+                    </td>
+                    <td class="time">12:30PM</td>
+                    <td class="number">#72</td>
+                    <td class="description">x1HambQueso x2HambBacon</td>
+                    <td class="price"><i class="far fa-credit-card"></i> $66,000</td>
+                    <td class="user">Fredy Mercury</td>
+                    <td class="address">Cra 54 12-32 <span><i class="fas fa-info-circle"></i></span> </td>
+                </tr>
+                <tr>
+                    <td class="status">
+                        <select class="form-select" aria-label="Default select example">
+                    <option  style="text-align: center;" selected>ESTADO</option>
+                    <option value="1">NUEVO</option>
+                    <option value="2">CONFIRMADO</option>
+                    <option value="3">PREPARANDO</option>
+                    <option value="4">ENVIANDO</option>
+                    <option value="5">ENTREGADO</option>
+                  </select>
+                    </td>
+                    <td class="time">12:30PM</td>
+                    <td class="number">#72</td>
+                    <td class="description">x1HambQueso x2HambBacon</td>
+                    <td class="price"><i class="far fa-credit-card"></i> $66,000</td>
+                    <td class="user">Fredy Mercury</td>
+                    <td class="address">Cra 54 12-32 <span><i class="fas fa-info-circle"></i></span> </td>
                 </tr>
             </tbody>
         </table>
-        <div class="btns">
-            <a href="">
-                <div class="btn-secondary" id="llamar-btn">
-                    LLAMAR AL TELEFONO
-                </div>
-            </a>
-            <a href="">
-                CANCELAR ORDEN
-           </a>
+        <div id="product-creator" class="product-creator">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre del producto</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cheese Burger">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Descripción</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="p.e. HambCheese">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="p.e. 32,000">
+            </div>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Imagen del producto</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <br>
+            <div class="btn-primary crear" id="crear-producto-btn">
+                CREAR NUEVO PRODUCTO
+            </div>
         </div>
+        <br>
+        <div id="modal">
+            <div id="modal-header">
+                <p>DETALLE DE PEDIDO</p> <i id="close-modal" class="fas fa-times"></i>
+            </div>
+            <div id="product-title">
+                <h3 class="secondary-title">Detalle</h3>
+            </div>
+            <div id="product-list">
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./styles/images/hamburguesa1.jpg" alt="...">
+                            <div>
+                                <h6 class="card-title">Veggie Avocado</h6>
+                                <p class=" text-muted">
+                                    <medium class="text-muted">$31,200</medium>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./styles/images/hamburguesa1.jpg" alt="...">
+                            <div>
+                                <h6 class="card-title">Veggie Avocado</h6>
+                                <p class=" text-muted">
+                                    <medium class="text-muted">$31,200</medium>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./styles/images/hamburguesa1.jpg" alt="...">
+                            <div>
+                                <h6 class="card-title">Veggie Avocado</h6>
+                                <p class=" text-muted">
+                                    <medium class="text-muted">$31,200</medium>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./styles/images/hamburguesa1.jpg" alt="...">
+                            <div>
+                                <h6 class="card-title">Veggie Avocado</h6>
+                                <p class=" text-muted">
+                                    <medium class="text-muted">$31,200</medium>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="product-title">
+                <h3 class="secondary-title">Importe total: <small>$62,400</small></h3>
+            </div>
+            <div id="product-title">
+                <h3 class="secondary-title">Estado</h3>
+            </div>
+            <div class="status-pops">
+                <span class="badge  rounded-pill bg-red">NUEVO</span>
+                <span class="badge rounded-pill bg-orange">CONFIRMADO</span>
+                <span class="badge rounded-pill bg-yellow">PREPARANDO</span>
+                <span class="badge rounded-pill bg-green">ENVIANDO</span>
+                <span class="badge rounded-pill bg-gray">ENTREGADO</span>
+            </div>
+            <div id="product-title">
+                <h3 class="secondary-title">Forma de pago</h3>
+                <p>Efectivo</p>
+            </div>
+            <div id="product-title">
+                <h3 class="secondary-title">Dirección</h3>
+                <small>Cra 56 49-17 Barrio Montecristo Barranquilla, Colombia</small>
+            </div>
+            <div id="product-title">
+                <h3 class="secondary-title">Usuario</h3>
+            </div>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td class="nombreCompleto">Freddy Mercury</td>
+                        <td class="userName">queen_Fredy</td>
+                    </tr>
+                    <tr>
+                        <td class="correo">freddy_queen@nada.com</td>
+                        <td class="telefono">+57 3116317751</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btns">
 
-    </div>
+                <div class="btn-secondary" id="llamar-btn">
+                    ESCRIBIR A WHATSAPP
+                </div>
+
+                <button type="button" class="btn" id="liveToastBtn">CANCELAR PEDIDO</button>
+
+            </div>
+
+        </div>
+        <div id="toast-confirm" class="toast top-0 start-0 p-1" false role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-body">
+                ¿Está seguro? Una vez eliminado un pedido no será posible volver a recuperarlo.
+                <div class="mt-2 pt-2 border-top">
+                    <button type="button" class="btn btn-primary btn-sm">Si, cancelar</button>
+                    <button id="cancel-toast" type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Volver</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body>

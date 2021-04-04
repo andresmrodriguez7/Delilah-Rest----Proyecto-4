@@ -45,7 +45,6 @@ cancelPedido.addEventListener('click', () => {
 
 confirmPedido.addEventListener('click', () => {
     modalPedido.style.display = "none";
-
 });
 
 for (let i = 0; i < addBtns.length; i++) {

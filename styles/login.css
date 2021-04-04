@@ -46,6 +46,12 @@ header #brand {
   margin-top: 20px;
 }
 
+.login .container-login p #emailHelp {
+  margin-top: 0px;
+  padding: 0px;
+  display: none;
+}
+
 .login .container-login p .login-input {
   width: 100%;
   outline: none;
