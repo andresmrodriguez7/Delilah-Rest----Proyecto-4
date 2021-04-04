@@ -4,7 +4,9 @@ let registerLink = document.getElementById("registerLink");
 let inicioLink = document.getElementById("inicioSesion");
 let loginBtn = document.getElementById("Login");
 let landingPage = document.getElementById("productos");
-let logOutBtn = document.getElementById("logOut")
+let logOutBtn = document.getElementById("logOut");
+let pedidoBtn = document.getElementById("pedidoBtn");
+let modalPedido = document.getElementById("blur-modal");
 
 registerLink.addEventListener('click', () => {
     paginaRegistro.style.display = "block";
@@ -26,4 +28,8 @@ loginBtn.addEventListener('click', () => {
 logOutBtn.addEventListener('click', () => {
     landingPage.style.display = "none";
     paginaLogin.style.display = "block";
+});
+
+pedidoBtn.addEventListener('click', () => {
+    modalPedido.style.display = "block";
 });
