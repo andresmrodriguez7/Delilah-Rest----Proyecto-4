@@ -179,6 +179,7 @@ header #brand {
   font-family: 'Nunito', sans-serif;
   color: white;
   font-weight: 600;
+  display: none;
 }
 
 .landing .float-pedido .card-detailed {

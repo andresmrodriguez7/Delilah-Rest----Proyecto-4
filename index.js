@@ -7,6 +7,10 @@ let landingPage = document.getElementById("productos");
 let logOutBtn = document.getElementById("logOut");
 let pedidoBtn = document.getElementById("pedidoBtn");
 let modalPedido = document.getElementById("blur-modal");
+let cancelPedido = document.getElementById("cancel-pedido");
+let confirmPedido = document.getElementById("confirm-pedido");
+let floatPedido = document.getElementById("float-pedido");
+let addBtns = document.getElementsByClassName("add-icon");
 
 registerLink.addEventListener('click', () => {
     paginaRegistro.style.display = "block";
@@ -33,3 +37,20 @@ logOutBtn.addEventListener('click', () => {
 pedidoBtn.addEventListener('click', () => {
     modalPedido.style.display = "block";
 });
+
+cancelPedido.addEventListener('click', () => {
+    modalPedido.style.display = "none";
+    floatPedido.style.display = "none";
+});
+
+confirmPedido.addEventListener('click', () => {
+    modalPedido.style.display = "none";
+
+});
+
+for (let i = 0; i < addBtns.length; i++) {
+    const element = addBtns[i];
+    element.addEventListener("click", () => {
+        floatPedido.style.display = "block";
+    })
+};
