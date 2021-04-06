@@ -10,7 +10,7 @@ header {
 header #brand {
   text-align: center;
   line-height: 80px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 22px;
   font-weight: 800;
   color: white;
@@ -40,16 +40,10 @@ header #brand {
 }
 
 .login .container-login {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   color: gray;
   margin-top: 20px;
-}
-
-.login .container-login p #emailHelp {
-  margin-top: 0px;
-  padding: 0px;
-  display: none;
 }
 
 .login .container-login p .login-input {
@@ -59,6 +53,12 @@ header #brand {
   border-radius: 5px;
   line-height: 35px;
   padding-left: 5px;
+}
+
+.login .container-login #emailHelp {
+  margin-top: 0px;
+  padding: 0px;
+  display: none;
 }
 
 .login .loginBtn {
@@ -73,7 +73,7 @@ header #brand {
   width: 80%;
   outline: none;
   text-transform: uppercase;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: white;
@@ -83,17 +83,17 @@ header #brand {
 .login .loginBtn .registerLink {
   color: #e6621f;
   text-transform: uppercase;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 13px;
   font-weight: 500;
   line-height: 50px;
   text-decoration: none;
 }
 
-.landing #fav-title .secondary-title, .landing #product-title .secondary-title, .blur-modal .modal-details .secondary-title {
-  font-family: 'Nunito', sans-serif;
+.landing #fav-title .secondary-title, .landing #product-title .secondary-title, .blur-modal .modal-details .secondary-title, .confirmed h2, .status-pedido .modal-details .secondary-title {
+  font-family: "Nunito", sans-serif;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 16px;
   color: gray;
 }
 
@@ -150,7 +150,7 @@ header #brand {
 }
 
 .landing .carousel .card .product-image .productname {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin-bottom: 2px;
   font-weight: 800;
   font-size: 16px;
@@ -182,7 +182,7 @@ header #brand {
 
 .landing .float-pedido {
   padding: 3%;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: white;
   font-weight: 600;
   display: none;
@@ -295,7 +295,7 @@ header #brand {
   width: 80%;
   outline: none;
   text-transform: uppercase;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: white;
@@ -400,7 +400,7 @@ header #brand {
 }
 
 .blur-modal .modal-details select option {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .blur-modal .modal-details #confirm-pedido {
@@ -411,5 +411,135 @@ header #brand {
   background-color: white;
   font-size: 16px;
   color: #e6621f;
+}
+
+.confirmed {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20%;
+}
+
+.confirmed #confirmed-vector {
+  width: 80%;
+}
+
+.confirmed p {
+  width: 80%;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.confirmed .follow-btn {
+  width: 70%;
+}
+
+.confirmed .follow-btn #follow-btn {
+  background-color: #e6621f;
+  border-style: none;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  outline: none;
+  text-transform: uppercase;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  line-height: 40px;
+}
+
+.status-pedido .modal-details {
+  width: 90%;
+  height: 95%;
+  margin: 5%;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: white;
+  overflow: hidden scroll;
+  scroll-behavior: smooth;
+  display: none;
+}
+
+.status-pedido .modal-details .pedido-list {
+  padding: 3%;
+}
+
+.status-pedido .modal-details .pedido-list .card {
+  margin-bottom: 20px;
+  border: none;
+}
+
+.status-pedido .modal-details .pedido-list .card .row {
+  height: 50px;
+}
+
+.status-pedido .modal-details .pedido-list .card .row .col-md-4 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 100%;
+}
+
+.status-pedido .modal-details .pedido-list .card .row .col-md-4 img {
+  width: 60px;
+  height: 100%;
+  margin-right: 5px;
+}
+
+.status-pedido .modal-details .pedido-list .card .row .col-md-4 div {
+  padding: 5px 0px;
+}
+
+.status-pedido .modal-details .pedido-list .card .row .col-md-4 div h6 {
+  font-size: 15px;
+  margin: 0px;
+}
+
+.status-pedido .modal-details .pedido-list .card .row .col-md-4 div p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.status-pedido .modal-details .goBack {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.status-pedido .modal-details .goBack #detail-goback {
+  background-color: white;
+  font-size: 16px;
+  color: #e6621f;
+  border: none;
+  font-weight: 600;
 }
 /*# sourceMappingURL=login.css.map */
