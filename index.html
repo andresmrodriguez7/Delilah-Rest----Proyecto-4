@@ -16,6 +16,9 @@
 </head>
 
 <body>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCxorD41kaXP98KpkZPOXyKkT79tLqEkbQ&callback=initMap">
+    </script>
+    <script src="./map.js"></script>
     <header>
         <div class="bg-green">
             <h1 id="brand">Delilah Restó</h1>
@@ -292,6 +295,15 @@
 
     <div id="status-pedido" class="status-pedido">
         <div class="modal-details">
+            <h3 class="secondary-title">Estado</h3>
+            <div class="status-pops">
+                <span class="badge  rounded-pill bg-red">NUEVO</span>
+                <span class="badge rounded-pill bg-orange">CONFIRMADO</span>
+                <span class="badge rounded-pill bg-yellow">PREPARANDO</span>
+                <span class="badge rounded-pill bg-green">ENVIANDO</span>
+                <span class="badge rounded-pill bg-gray">ENTREGADO</span>
+            </div>
+            <br>
             <h3 class="secondary-title">Detalle</h3>
             <div class="pedido-list">
                 <div class="card">
@@ -336,11 +348,14 @@
             <h3 class="secondary-title">Método de pago</h3>
             <p>Efectivo</p>
             <br>
-            <h3 class="secondary-title">Dirección de recogida</h3>
+            <h3 class="secondary-title">Dirección de entrega</h3>
             <p>p.e. Av 43 #54-123 Barrio Esperanza</p>
             <br>
-            <h3 class="secondary-title">¿Instrucciones para el delivery?</h3>
+            <h3 class="secondary-title">Instrucciones para el delivery</h3>
             <p>p.e. Lo recogerá mi novia</p>
+            <br>
+            <h3 class="secondary-title">¿Donde viene mi pedido?</h3>
+            <div id="map"> </div>
             <br>
             <div class="goBack">
                 <button id="detail-goback" type="submit">VOLVER</button>
