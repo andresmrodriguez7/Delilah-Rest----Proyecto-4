@@ -25,7 +25,6 @@ userInput.addEventListener('blur', (event) => {
 registerLink.addEventListener('click', () => {
     paginaRegistro.style.display = "block";
     paginaLogin.style.display = "none";
-
 });
 
 inicioLink.addEventListener('click', () => {
@@ -36,7 +35,6 @@ inicioLink.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     landingPage.style.display = "block";
     paginaLogin.style.display = "none";
-
 });
 
 logOutBtn.addEventListener('click', () => {

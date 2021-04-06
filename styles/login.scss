@@ -331,12 +331,13 @@ header {
 .confirmed {
     width: 100%;
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     margin-top: 20%;
+    display: none;
     #confirmed-vector {
         width: 80%;
     }
@@ -369,6 +370,7 @@ header {
 }
 
 .status-pedido {
+    display: none;
     .modal-details {
         width: 90%;
         height: 95%;
@@ -378,7 +380,6 @@ header {
         background-color: white;
         overflow: hidden scroll;
         scroll-behavior: smooth;
-        display: none;
         .secondary-title {
             @extend %secondary-title;
         }
