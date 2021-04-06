@@ -15,6 +15,7 @@ const userInput = document.getElementById("correo");
 const confirmedPage = document.getElementById("confirmed");
 const seguirPedido = document.getElementById("follow-btn");
 const statusPage = document.getElementById("status-pedido");
+const detailBack = document.getElementById("detail-goback");
 
 
 userInput.addEventListener('blur', (event) => {
@@ -62,6 +63,11 @@ seguirPedido.addEventListener('click', () => {
     confirmedPage.style.display = "none";
     statusPage.style.display = "block";
 });
+
+detailBack.addEventListener("click", () => {
+    statusPage.style.display = "none";
+    landingPage.style.display = "block";
+})
 
 for (let i = 0; i < addBtns.length; i++) {
     const element = addBtns[i];
