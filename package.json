@@ -1,0 +1,30 @@
+{
+  "name": "delilah_resto",
+  "version": "1.0.0",
+  "description": "acamica_project3",
+  "main": "server.js",
+  "scripts": {
+    "test": "start",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresmrodriguez7/Delilah-Rest----Proyecto-4.git"
+  },
+  "keywords": [
+    "delilah"
+  ],
+  "author": "AndresMesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andresmrodriguez7/Delilah-Rest----Proyecto-4/issues"
+  },
+  "homepage": "https://github.com/andresmrodriguez7/Delilah-Rest----Proyecto-4#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.2"
+  }
+}
