@@ -76,6 +76,15 @@ header {
             text-decoration: none;
         }
     }
+    .toast {
+        position: absolute;
+        display: block;
+        top: 3%;
+        right: 0%;
+        width: 95%;
+        margin: auto;
+        z-index: 5000;
+    }
     .form-group {
         .form-check-label {
             font-family: "Nunito", sans-serif;
