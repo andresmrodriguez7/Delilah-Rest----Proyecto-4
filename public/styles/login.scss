@@ -21,6 +21,14 @@ header {
 
 #mean-register {
     display: none;
+    .toast {
+        position: fixed;
+        top: 3%;
+        left: 3%;
+        opacity: 1;
+        width: 95%;
+        margin: 0px auto;
+    }
 }
 
 .login {
@@ -75,15 +83,6 @@ header {
             line-height: 50px;
             text-decoration: none;
         }
-    }
-    .toast {
-        position: absolute;
-        display: block;
-        top: 3%;
-        right: 0%;
-        width: 95%;
-        margin: auto;
-        z-index: 5000;
     }
     .form-group {
         .form-check-label {
@@ -179,10 +178,53 @@ header {
             .card-body {
                 background-color: white;
                 color: black;
-                .btn {
+                .product-list-pedido {
+                    .card {
+                        width: 95%;
+                        border: none;
+                        margin: 2.5px 0px;
+                        .row {
+                            height: 50px;
+                            .col-md-4 {
+                                position: relative;
+                                display: flex;
+                                flex-flow: row wrap;
+                                justify-content: flex-start;
+                                height: 100%;
+                                img {
+                                    width: 60px;
+                                    height: 100%;
+                                    margin-right: 5px;
+                                }
+                                div {
+                                    padding: 5px 0px;
+                                    h6 {
+                                        font-size: 15px;
+                                        margin: 0px;
+                                    }
+                                    p {
+                                        margin: 0;
+                                        font-size: 12px;
+                                    }
+                                }
+                                .fav-icon {
+                                    position: absolute;
+                                    right: 50px;
+                                    top: 14px;
+                                    i {
+                                        font-size: 20px;
+                                        color: #e6621f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #pedidoBtn {
                     background-color: #e6621f;
-                    height: auto;
+                    color: white;
                     border: none;
+                    margin-top: 10px;
                 }
             }
         }
@@ -492,5 +534,16 @@ header {
                 font-weight: 600;
             }
         }
+    }
+}
+
+@media (min-width: 700px) {
+    .login {
+        width: 50%;
+        margin: auto;
+    }
+    .landing {
+        width: 40%;
+        margin: auto;
     }
 }

@@ -50,34 +50,37 @@
     </div>
     <div class="login" id="mean-register">
         <div class="container-login">
-            <label for="user">Usuario</label>
-            <p><input class="login-input" type="text" name="user" id="user"></p>
+            <label for="user">Escoge un nick-name o usuario</label>
+            <p><input class="login-input" type="text" name="user" id="user" placeholder="ej. andrea_98"></p>
         </div>
         <div class="container-login">
-            <label for="nombres">Nombre y apellido</label>
-            <p> <input class="login-input" type="text" name="nombres" id="nombres"></p>
+            <label for="nombres">Nombre</label>
+            <p> <input class="login-input" type="text" name="nombres" id="nombres" placeholder="ej. Andrea"></p>
+        </div>
+        <div class="container-login">
+            <label for="apellidos">Apellidos</label>
+            <p> <input class="login-input" type="text" name="apellidos" id="apellidos" placeholder="el. Martinez Fernandez"></p>
         </div>
         <div class="container-login">
             <label for="email">Correo electrónico</label>
-            <p> <input class="login-input" type="email" name="email" id="email"></p>
+            <p> <input class="login-input" type="email" name="email" id="email" placeholder="ejemplo@nada.com"></p>
         </div>
         <div class="container-login">
             <label for="telefono">Teléfono</label>
-            <p> <input class="login-input" type="number" name="telefono" id="telefono"></p>
+            <p> <input class="login-input" type="number" name="telefono" id="telefono" placeholder="555-362-1234"></p>
         </div>
         <div class="container-login">
             <label for="direccion">Dirección de envío</label>
-            <p> <input class="login-input" type="text" name="direccion" id="direccion"></p>
+            <p> <input class="login-input" type="text" name="direccion" id="direccion" placeholder="Av Simpre Viva 10-46 Springfield"></p>
         </div>
         <div class="container-login">
             <label for="contrasena">Contraseña</label>
             <p> <input class="login-input" type="password" name="contrasena" id="contrasena"></p>
         </div>
         <div class="loginBtn">
-            <button type="submit">Crear cuenta</button>
+            <button id="registrarUsuario" type="submit">Crear cuenta</button>
             <p><a id="inicioSesion" class="registerLink" href="">inicio de sesión</a></p>
         </div>
-
     </div>
     <div class="landing" id="productos">
         <div id="fav-title">
@@ -116,7 +119,7 @@
             <div class="card-detailed">
                 <h5 class="card-header">Tu pedido</h5>
                 <div class="card-body">
-                    <div id="product-list">
+                    <div id="product-list-pedido" class="product-list-pedido">
                         <div class="card">
                             <div class="row g-0">
                                 <div class="col-md-4">
@@ -138,7 +141,7 @@
             <h3 class="secondary-title">Nuestros platos</h3>
         </div>
         <div id="product-list">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="./styles/images/desayuno.jpg" alt="...">
@@ -149,68 +152,7 @@
                         <span class="add-icon"><i class="fas fa-plus-circle"></i></span>
                     </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/cafe.jpg" alt="...">
-                        <div>
-                            <h6 class="card-title">Coffee Late</h6>
-                            <p class=" text-muted"><small class="text-muted">$16,200</small></p>
-
-                        </div>
-                        <span class="add-icon"><i class="fas fa-plus-circle"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/big-mac.jpg" alt="...">
-                        <div>
-                            <h6 class="card-title">Big Mac</h6>
-                            <p class=" text-muted"><small class="text-muted">$18,900</small></p>
-                        </div>
-                        <span class="add-icon"><i class="fas fa-plus-circle"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/huevo.png" alt="...">
-                        <div>
-                            <h6 class="card-title">Scrambled Heaven</h6>
-                            <p class=" text-muted"><small class="text-muted">$19,200</small></p>
-                        </div>
-                        <span class="add-icon"><i class="fas fa-plus-circle"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/tostado.png" alt="...">
-                        <div>
-                            <h6 class="card-title">Tostadito</h6>
-                            <p class=" text-muted"><small class="text-muted">$24,400</small></p>
-                        </div>
-                        <span class="add-icon"><i class="fas fa-plus-circle"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="./styles/images/tostado-criollo-bacon.png" alt="...">
-                        <div>
-                            <h6 class="card-title">Tostadito Criollo</h6>
-                            <p class=" text-muted"><small class="text-muted">$26,200</small></p>
-                        </div>
-                        <span class="add-icon"><i class="fas fa-plus-circle"></i></span>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
         <div id="blur-modal" class="blur-modal">
             <div class="modal-details">

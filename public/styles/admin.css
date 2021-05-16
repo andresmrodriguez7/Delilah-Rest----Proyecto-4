@@ -42,23 +42,20 @@ header nav ul {
 header nav ul li {
   list-style: none;
   margin: 0px 20px;
-}
-
-header nav ul li a {
   text-decoration: none;
   color: white;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 40px;
+  cursor: pointer;
 }
 
-header nav ul li a:hover {
-  border-bottom: 3px white solid;
-  color: white !important;
+header nav ul li:hover {
+  text-shadow: 0px 0px 5px white;
 }
 
-header nav ul li a .btn-secondary {
+header nav ul li .btn-secondary {
   background-color: white;
   color: #e6621f;
   border-radius: 20px;
@@ -66,30 +63,40 @@ header nav ul li a .btn-secondary {
   text-align: center;
   font-weight: 600;
   width: 200px;
+  border-bottom: none;
 }
 
-.table tbody tr {
+header nav ul li:last-child {
+  font-size: 25px;
+  color: white;
+}
+
+.pedidos {
+  display: table;
+}
+
+.pedidos tbody tr {
   font-size: 14px;
   line-height: 24px;
   font-family: 'Nunito', sans-serif;
   color: #6b6666;
 }
 
-.table tbody tr th {
+.pedidos tbody tr th {
   text-transform: uppercase;
   font-size: 12px;
 }
 
-.table tbody tr th .fas {
+.pedidos tbody tr th .fas {
   margin: 0px 6px;
   font-size: 15px;
 }
 
-.table tbody tr .status {
+.pedidos tbody tr .status {
   width: 180px;
 }
 
-.table tbody tr .status select {
+.pedidos tbody tr .status select {
   width: auto;
   height: 25px;
   border-radius: 20px;
@@ -97,23 +104,23 @@ header nav ul li a .btn-secondary {
   line-height: 10px;
 }
 
-.table tbody tr .time {
+.pedidos tbody tr .time {
   width: 110px;
 }
 
-.table tbody tr .number {
+.pedidos tbody tr .number {
   width: 80px;
 }
 
-.table tbody tr .description {
-  width: 400px;
+.pedidos tbody tr .description {
+  width: 250px;
 }
 
-.table tbody tr .user {
-  width: 300px;
+.pedidos tbody tr .user {
+  width: 250px;
 }
 
-.table tbody tr .address {
+.pedidos tbody tr .address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,17 +134,92 @@ header nav ul li a .btn-secondary {
   padding-right: 70px;
 }
 
-.table tbody tr .address .fas {
+.pedidos tbody tr .address .fas {
   margin: 0px 6px;
   font-size: 22px;
   cursor: pointer;
 }
 
-.table tbody tr .price {
+.pedidos tbody tr .price {
   width: 150px;
 }
 
-.table tbody tr .price .far {
+.pedidos tbody tr .price .far {
+  margin: 0px 0px;
+  font-size: 15px;
+}
+
+#table-usuarios {
+  display: none;
+}
+
+#table-usuarios tbody tr {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Nunito', sans-serif;
+  color: #6b6666;
+}
+
+#table-usuarios tbody tr th {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#table-usuarios tbody tr th .fas {
+  margin: 0px 6px;
+  font-size: 15px;
+}
+
+#table-usuarios tbody tr .id {
+  width: 60px;
+}
+
+#table-usuarios tbody tr .userName {
+  width: 150px;
+}
+
+#table-usuarios tbody tr .name {
+  width: 150px;
+}
+
+#table-usuarios tbody tr .lastname {
+  width: 150px;
+}
+
+#table-usuarios tbody tr .email {
+  width: 150px;
+  overflow: hidden;
+}
+
+#table-usuarios tbody tr .phone {
+  width: 150px;
+  overflow: hidden;
+}
+
+#table-usuarios tbody tr .address {
+  width: 350px;
+  overflow: hidden;
+}
+
+#table-usuarios tbody tr .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 70px;
+}
+
+#table-usuarios tbody tr .price {
+  width: 150px;
+}
+
+#table-usuarios tbody tr .price .far {
   margin: 0px 5px;
   font-size: 15px;
 }
@@ -399,5 +481,69 @@ header nav ul li a .btn-secondary {
   position: absolute;
   z-index: 1000;
   margin: 30px;
+}
+
+#products {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 100%;
+  width: 100%;
+}
+
+#products .card {
+  margin: 0 20px 20px 20px;
+  -webkit-box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+          box-shadow: 0px 0px 20px rgba(128, 128, 128, 0.1);
+  width: 270px;
+}
+
+#products .card .col .container {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+#products .card .col .container img {
+  margin: 10px 0px;
+  width: 250px;
+  height: 230px;
+}
+
+#products .card .col .container div {
+  width: 100%;
+}
+
+#products .card .col .container .editor-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  padding: 0 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #e6621f;
+  font-size: 20px;
+}
+
+#products .card .col .container .editor-control p:hover {
+  text-shadow: 0px 0px 1px #e6621f;
+  cursor: pointer;
+}
+
+#products .card .col .container .editor-control i {
+  cursor: pointer;
 }
 /*# sourceMappingURL=admin.css.map */
