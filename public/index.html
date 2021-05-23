@@ -84,6 +84,9 @@
     </div>
     <div class="landing" id="productos">
         <div id="fav-title">
+            <i><h2 class="secondary-title welcome">¡Bienvenido a Delilah <span class="user_nombre"></span>! </h2></i>
+        </div>
+        <div id="fav-title">
             <h3 class="secondary-title">Tus favoritos</h3>
         </div>
         <div class="carousel">
@@ -157,8 +160,8 @@
         <div id="blur-modal" class="blur-modal">
             <div class="modal-details">
                 <h3 class="secondary-title">Detalle</h3>
-                <div class="pedido-list">
-                    <div class="card">
+                <div id="pedido-list" class="pedido-list">
+                    <!-- <div class="card">
                         <div class="row g-0">
                             <div class="col-md-4">
                                 <img src="./styles/images/tostado-criollo-bacon.png" alt="...">
@@ -169,31 +172,7 @@
                                 <span class="delete-icon"><i class="far fa-times-circle"></i></span>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./styles/images/tostado-criollo-bacon.png" alt="...">
-                                <div>
-                                    <h6 class="card-title">Tostadito Criollo</h6>
-                                    <p class=" text-muted"><small class="text-muted">$26,200</small></p>
-                                </div>
-                                <span class="delete-icon"><i class="far fa-times-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="./styles/images/tostado-criollo-bacon.png" alt="...">
-                                <div>
-                                    <h6 class="card-title">Tostadito Criollo</h6>
-                                    <p class=" text-muted"><small class="text-muted">$26,200</small></p>
-                                </div>
-                                <span class="delete-icon"><i class="far fa-times-circle"></i></span>
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
                 <h3 class="secondary-title">Total: $32,900</h3>
                 <br>
@@ -233,7 +212,7 @@
         <br>
         <br>
         <h2 class="secondary-title">¡Recibimos tu pedido!</h2>
-        <p>{usuario}, gracias por pedir a Delilah. Puedes seguir tu pedido para saber donde está.</p>
+        <p><span class="user_nombre"></span>, gracias por pedir a Delilah. Puedes seguir tu pedido para saber donde está.</p>
         <br>
         <br>
         <div class="follow-btn">

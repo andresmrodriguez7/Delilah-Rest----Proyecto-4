@@ -150,9 +150,6 @@ registrarUsuario.addEventListener('click', () => {
     registerUser(userData);
     paginaRegistro.style.display = "block";
     paginaLogin.style.display = "none";
-
-
-
 });
 
 registerLink.addEventListener('click', () => {
@@ -180,6 +177,11 @@ async function logIn(credentials) {
     if (jsonUser.status == 200) {
         landingPage.style.display = "block";
         paginaLogin.style.display = "none";
+        let bienvenida = document.getElementsByClassName("user_nombre");
+        for (let i = 0; i < bienvenida.length; i++) {
+            const element = bienvenida[i];
+            element.innerHTML = jsonUser.body.nombre;
+        }
         localStorage.setItem("id_logeado", jsonUser.body.id_usuario);
         localStorage.setItem("nombre_logeado", jsonUser.body.nombre);
         localStorage.setItem("apellidos_logeado", jsonUser.body.apellidos);
@@ -214,18 +216,19 @@ loginBtn.addEventListener('click', () => {
 
 logOutBtn.addEventListener('click', () => {
     window.location.href = "/index.html";
-    localStorage.setItem("pedido", []);
+
 });
+
 // esta función se suscribe a un evento para identificar el ID del producto que se desea incluir en un pedido
 // una vez identificado lo guarda en el local storage
 let productListPedido = document.getElementById("product-list-pedido");
+
 let dibujarPedido = async() => {
     if (localStorage.getItem("pedido", JSON.stringify(pedido))) {
         pedido = JSON.parse(localStorage.getItem("pedido"));
         let floatPedido = document.getElementById("float-pedido");
         let response = await fetch(`productos`);
         let jsonProduct = await response.json();
-        console.log(jsonProduct.body);
         productListPedido.innerHTML = " ";
         for (let i = 0; i < pedido.length; i++) {
             const element = pedido[i];
@@ -306,21 +309,63 @@ let obtenerProductos = async function getProducts() {
 }
 
 
-
-
-
 obtenerProductos();
 
-
-
-
-pedidoBtn.addEventListener('click', () => {
+let desplegarModalPedido = async() => {
     modalPedido.style.display = "block";
-});
+    let pedidoList = document.getElementById("pedido-list");
+    if (localStorage.getItem("pedido", JSON.stringify(pedido))) {
+        pedido = JSON.parse(localStorage.getItem("pedido"));
+        let response = await fetch(`productos`);
+        let jsonProduct = await response.json();
+        pedidoList.innerHTML = " ";
+        for (let i = 0; i < pedido.length; i++) {
+            const element = pedido[i];
+            let solicitado = jsonProduct.body.find(e => e.id_productos == element);
+            //añadir un producto al pedido y mostrarlo en el blur que detalla el pedido, ofrece la opción de eliminar el producto del pedido
+            let productItem = document.createElement("div");
+            productItem.className = "card";
+            productItem.style.margin = "0px"
+            productItem.id = `${element}`;
+            productItem.innerHTML += `   
+             <div class="card">
+                             <div class="row g-0">
+                             <div class="col-md-4">
+                                     <img src="./styles/images/${solicitado.url}" alt="${solicitado.descripcion}">
+                                     <div>
+                                         <h6 class="card-title">${solicitado.nombre}</h6>
+                                         <p class=" text-muted"><small class="text-muted">$${solicitado.precio}</small></p>
+                                     </div>
+                                     <span id=${solicitado.descripcion} class="delete-icon"><i id=${solicitado.id_productos} class="far fa-times-circle"></i></i></span>
+                                     </div>   
+                             </div>
+                         </div>`;
+            pedidoList.appendChild(productItem);
+            let btnBorrarPedido = document.getElementsByClassName("fa-times-circle")
+            for (let i = 0; i < btnBorrarPedido.length; i++) {
+                const element = btnBorrarPedido[i];
+                // element.addEventListener("click",
+                //     () => {
+                //         let idRetirado = this.id;
+                //         console.log(idRetirado);
+                //         let aux = pedido.indexOf(idRetirado);
+                //         pedido.splice(aux, 1);
+
+                //         desplegarModalPedido();
+                //     })
+            }
+        }
+    }
+}
+
+pedidoBtn.addEventListener('click', desplegarModalPedido)
+
 
 cancelPedido.addEventListener('click', () => {
     modalPedido.style.display = "none";
     floatPedido.style.display = "none";
+    localStorage.setItem("pedido", []);
+    pedido = [];
 });
 
 confirmPedido.addEventListener('click', () => {
