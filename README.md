@@ -40,7 +40,8 @@ npm install nodemon
 3. Edit your conection to MySQL in `conexion.js`
 
 ```JS
-SQL_URI='ENTER_YOUR_CONNECTION_CREDENTIALS'
+mariadbUser='ENTER_YOUR_CONNECTION_CREDENTIALS'
+mariadbPass='ENTER_YOUR_CONNECTION_CREDENTIALS'
 ```
 
 4. Create your DataBase with the file delilah.sql
