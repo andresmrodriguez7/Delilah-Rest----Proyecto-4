@@ -1,0 +1,292 @@
+
+swagger: "2.0"
+info:
+  description: "Documentación API para sistema de pedidos online de restaurante Delilah Restó"
+  version: "v1.0.0"
+  title: "Sistema de pedidos - Delilah Restó"
+  contact: 
+    email: "acmesarodriguez@gmail.com"
+host: "localhost:3000"
+tags:
+- name: "API REST"
+  description: "API Delilah Restó y sus endpoints"
+
+ 
+paths:
+  /usuario:
+    get:
+      tags: 
+      - "Usuario"
+      summary: "En este endpoint se llaman todos los usuarios registrados"
+      description: "Devuelve un JSON con información de los usuarios"
+      responses: 
+        200:
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/usuario"
+        400: 
+          description: Elemento invalido
+    post:
+      tags: 
+      - "Usuario"
+      summary: "En este endpoint se pueden registrar nuevos usuarios en el sistema"
+      description: "Debe enviarse toda la información requerida para un usuario en un json"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: Creación de usuario en el sistema
+        required: true
+        schema:
+          $ref: "#/definitions/usuario"
+      responses: 
+        200:
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/usuario"
+        400: 
+          description: Elemento invalido
+    put:
+      tags: 
+      - "Usuario"
+      summary: "En este endpoint se puede actualizar la información de un usuario"
+      description: "Actualiza la información de un usuario"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: Objeto que actualiza un usuario previamente registrado
+        required: true
+        schema:
+          $ref: "#/definitions/usuario"
+      responses: 
+        200:
+          description: Usuario actualizado
+        400: 
+          description: Elemento invalido
+  /usuario/{id_usuario}:
+    delete: 
+      tags: 
+      - "Usuario"
+      summary: "En este endpoint se elimina usuarios creados en el sistema"
+      description: "Elimina algun usuario creado usando su id"
+      parameters: 
+      - in: "path"
+        name: "id_usuario"
+        description: id del usuario que se debe eliminar del sistema
+        type: "integer" 
+        required: true
+      responses: 
+        200:
+          description: Usuario eliminado
+        400: 
+          description: Elemento o ID invalido
+  /producto:
+    get:
+      tags: 
+      - "Producto"
+      summary: "En este endpoint se llaman todos los productos creados"
+      description: "Devuelve un JSON con información de los productos"
+      responses: 
+        200:
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/producto"
+        400: 
+          description: Elemento invalido
+    post:
+      tags: 
+      - "Producto"
+      summary: "En este endpoint se pueden crear nuevos productos en el sistema"
+      description: "Debe enviarse toda la información requerida para un producto en un json"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: Creación de usuario en el sistema
+        required: true
+        schema:
+          $ref: "#/definitions/producto"
+      responses: 
+        200:
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/producto"
+        400: 
+          description: Elemento invalido
+  
+    put:
+      tags: 
+      - "Producto"
+      summary: "En este endpoint se puede actualizar la información de un producto"
+      description: "Actualiza las caracteristicas de un producto"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: Objeto que actualiza un producto previamente creado
+        required: true
+        schema:
+          $ref: "#/definitions/producto"
+      responses: 
+        200:
+          description: Producto actualizado
+        400: 
+          description: Elemento invalido
+  /producto/{id_productos}:
+    delete: 
+      tags: 
+      - "Producto"
+      summary: "En este endpoint se elimina productos creados en el sistema"
+      description: "Elimina algun producto creado usando su id"
+      parameters: 
+      - in: "path"
+        name: "id_productos"
+        description: id del producto que se debe eliminar del sistema
+        type: "integer" 
+        required: true
+      responses: 
+        200:
+          description: Producto eliminado
+        400: 
+          description: Elemento o ID invalido
+  /pedido:
+    get:
+      tags: 
+      - "Pedidos"
+      summary: "En este endpoint se llaman todos los pedidos creados"
+      description: "Devuelve un JSON con información de los pedidos"
+      responses: 
+        200:
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/pedido"
+        400: 
+          description: Elemento invalido
+    post:
+      tags: 
+      - "Pedidos"
+      summary: "En este endpoint se pueden crear nuevos pedidos en el sistema"
+      description: "Debe enviarse toda la información requerida para un pedido en un json"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: Creación de pedido en el sistema
+        required: true
+        schema:
+          $ref: "#/definitions/pedido"
+      responses: 
+        200:
+          description: OK
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/pedido"
+        400: 
+          description: Elemento invalido
+    put:
+      tags: 
+      - "Pedidos"
+      summary: "En este endpoint se puede actualizar unicamente el estado de un pedido"
+      description: "Actualiza las condiciones de un pedido"
+      parameters: 
+      - in: "body"
+        name: "body"
+        description: Objeto que actualiza un pedido previamente creado
+        required: true
+        schema:
+          $ref: "#/definitions/pedido"
+      responses: 
+        200:
+          description: Pedido actualizado
+        400: 
+          description: Elemento invalido
+  /pedido/{id_pedidos}:
+    delete: 
+      tags: 
+      - "Pedidos"
+      summary: "En este endpoint se anula pedidos creados en el sistema"
+      description: "Anula algún producto creado usando su id"
+      parameters: 
+      - in: "path"
+        name: "id_pedidos"
+        description: id del pedidoque se debe anular del sistema
+        type: "integer" 
+        required: true
+      responses: 
+        200:
+          description: Pedido anulado
+        400: 
+          description: Elemento o ID invalido
+definitions:
+  usuario:
+    type: "object"
+    properties: 
+        id_usuario: 
+          type: "integer"
+          format: "int64"
+        usuario:
+          type: "string"
+        nombres: 
+          type: "string"
+        apellidos:
+          type: "string"
+        correo:
+          type: "string"
+        telefono: 
+          type: "integer"
+        direccion:
+          type: "string"
+        contrasena:
+          type: "string"
+  producto:
+    type: "object"
+    properties: 
+        id_productos: 
+          type: "integer"
+          format: "int64"
+        nombre:
+          type: "string"
+        descripcion: 
+          type: "string"
+        precio:
+          type: "integer"
+          format: "int64"
+        disponible:
+          type: "boolean"
+        url:
+          type: "string"
+  pedido:
+    type: "object"
+    properties: 
+        id_pedido: 
+          type: "integer"
+          format: "int64"
+        id_usuario: 
+          type: "integer"
+          format: "int64"
+        status:
+          type: "string"
+        detalle: 
+          type: "string"
+        importe:
+          type: "integer"
+          format: "int64"
+        formaPago:
+          type: "string"
+        direccion:
+          type: "string"
+    
+      
+    
+    
+    
+    
+  
+    

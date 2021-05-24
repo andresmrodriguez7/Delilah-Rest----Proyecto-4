@@ -1,5 +1,7 @@
 const Sequelize = require('sequelize');
-const path = 'mysql://root:camiloandres7@localhost:3306/acamica';
+const mariadbUser = "root"
+const mariadbPass = "camiloandres7"
+const path = `mysql://${mariadbUser}:${mariadbPass}@localhost:3306/acamica`;
 const sequelize = new Sequelize(path, { operatorAliases: false });
 sequelize.authenticate().then(() => {
     console.log('conectado a la DB');
