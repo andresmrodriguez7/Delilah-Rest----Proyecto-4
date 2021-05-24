@@ -45,13 +45,13 @@ CREATE TABLE pedidos(
 
 INSERT INTO productos (nombre, descripcion, precio, disponible, url)
 VALUES 
-('Coffee Late', 'xLateCoff', '16000', '1', 'cafe.jpg');
-('Big Mac', 'xBigMag', '23000', '1', 'big-mac.jpg');
-('Leslies Burger', 'xLeslies', '13000', '1', 'desayuno.jpg');
-('Burger Master', 'xMaster', '21000', '1', 'hamburguesa1.jpg');
-('Break Faster', 'xBreak', '15000', '1', 'huevo.png');
-('Tostadito Criollo', 'xCriollo', '21000', '1', 'tostado-criollo-bacon.png');
-('Tostado', 'xTostTrad', '18000', '1', 'tostado.png');
+('Coffee Late', 'xLateCoff', 16000, 1, 'cafe.jpg');
+('Big Mac', 'xBigMag', 23000', 1, 'big-mac.jpg');
+('Leslies Burger', 'xLeslies', 13000, 1, 'desayuno.jpg');
+('Burger Master', 'xMaster', 21000, 1, 'hamburguesa1.jpg');
+('Break Faster', 'xBreak', 15000, 1, 'huevo.png');
+('Tostadito Criollo', 'xCriollo', 21000, 1, 'tostado-criollo-bacon.png');
+('Tostado', 'xTostTrad', 18000, 1, 'tostado.png');
  
  INSERT INTO usuarios (usuario, nombre, apellidos, email, telefono, direccion, contrasena)
  VALUES 
