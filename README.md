@@ -15,7 +15,6 @@ Para utilizar el proyect se deberá contar al menos con Node.js 13.10.1 y MySQL 
 1. Have a text editor
 2. Install and configure a database engine
 3. Install Node.js
-4. Install nodemon.js
 4. Install Postman
 
 #### Installation ⚙️
@@ -29,7 +28,13 @@ git clone https://github.com/andresmrodriguez7/Delilah-Rest-Proyecto-4.git
 2. Install all dependencies with npm
 
 ```sh
-npm install
+npm install body-parser
+npm install dotenv
+npm install express
+npm install express-jwt
+npm install mysql2
+npm install sequelize
+npm install nodemon
 ```
 
 3. Edit your conection to MySQL in `conexion.js`
