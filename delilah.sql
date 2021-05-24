@@ -15,31 +15,30 @@ CREATE TABLE usuarios(
 	apellidos VARCHAR(250) NOT NULL,
 	email VARCHAR(50) NOT NULL UNIQUE,
 	telefono VARCHAR(50) NOT NULL UNIQUE,
- direccion VARCHAR(50) NOT NULL,
-	contraseña VARCHAR(250) NOT NULL DEFAULT 0,
-	is_admin TINYINT NOT NULL DEFAULT 0,
+ 	direccion VARCHAR(50) NOT NULL,
+	contrasena VARCHAR(250) NOT NULL DEFAULT 0,
   PRIMARY KEY(id_usuario)
 ) AUTO_INCREMENT = 1000;
 
 CREATE TABLE productos(
 	id_productos INT NOT NULL AUTO_INCREMENT,
 	nombre VARCHAR(25) NOT NULL,
- descripcion VARCHAR(250) NOT NULL,
- precio INT NOT NULL,
- disponible TINYINT NOT NULL DEFAULT 1, 
- url VARCHAR(500) NOT NULL,
+ 	descripcion VARCHAR(250) NOT NULL,
+ 	precio INT NOT NULL,
+ 	disponible TINYINT NOT NULL DEFAULT 1, 
+ 	url VARCHAR(500) NOT NULL,
 	PRIMARY KEY(id_productos)
 );
 
 CREATE TABLE pedidos(
 	id_pedido INT NOT NULL AUTO_INCREMENT,
- id_usuario INT NOT NULL,
+        id_usuario INT NOT NULL,
 	time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-	status VARCHAR(250) NOT NULL NOT NULL,
-	detalle VARCHAR(500) NOT NULL NOT NULL,
- importe INT NOT NULL,
+	status VARCHAR(250) NOT NULL,
+	detalle VARCHAR(500) NOT NULL,
+        importe INT NOT NULL,
 	formaPago VARCHAR(250) NOT NULL NOT NULL,
- direccion 
+        direccion VARCHAR(500) NOT NULL,
 	PRIMARY KEY(id_pedido),
 	FOREIGN KEY(id_usuario) REFERENCES usuarios(id_usuario),
 ) AUTO_INCREMENT = 10000;
